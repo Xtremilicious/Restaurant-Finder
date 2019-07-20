@@ -124,7 +124,7 @@ body {
 }
 
 .features {
-    height: 50vh;
+    height: 55vh;
     background-color: #3B0B0B;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
