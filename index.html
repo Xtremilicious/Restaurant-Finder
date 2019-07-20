@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="title">
-                <div class="changing">Feeling Hungry?</div>
+                <div id="typewriter" class="changing"></div>
                 <div class="sub-title">Order food from favourite restaurants near you.</div>
             </div>
             <div class="search">
@@ -73,6 +73,15 @@
     <div class="footer">
         Made by Nilarjun Das | Inspired by Swiggy
     </div>
+
+    <script src='./src/js/core.js'></script>
+    <script type="text/javascript">
+        const instance = new Typewriter('#typewriter', {
+            strings: ['Feeling hungry?', 'Unexpected guests?', 'Cooking gone wrong?', 'Game night?', 'Movie marathon?'],
+            autoStart: true,
+            loop: true,
+        });
+    </script>
 </body>
 
 </html>
