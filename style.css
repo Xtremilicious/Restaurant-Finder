@@ -34,6 +34,7 @@ body {
     width: 90%;
 }
 
+
 .logo-title {
     font-size: 2.2em;
     color: #660c0c;
@@ -195,10 +196,31 @@ body {
 .footer {
     height: 10vh;
     background: #424242;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     color: white;
+}
+.footer a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-style:solid;
+}
+.credits{
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 2em;
+}
+.links{
+    display:flex;
+    justify-content: flex-start;
+    padding-left: 1em;
 }
 
 @media only screen and (max-width: 900px) {
