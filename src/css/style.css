@@ -98,14 +98,14 @@ body {
     font-size: 1.1em;
     height: 3.6em;
 }
-
 .search-submit {
-    width: 20%;
+    width: auto;
     border: none;
     background: #660c0c;
     color: white;
     padding: 1em;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .cities {
@@ -118,12 +118,10 @@ body {
 .cities-sub-title {
     color: grey;
 }
-
 .landing-image {
     width: 100%;
     height: 100vh;
 }
-
 .features {
     height: 55vh;
     background-color: #3B0B0B;
@@ -196,8 +194,7 @@ body {
 .footer {
     height: 10vh;
     background: #424242;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
@@ -220,7 +217,7 @@ body {
 .links{
     display:flex;
     justify-content: flex-start;
-    padding-left: 1em;
+    padding-left: 2em;
 }
 
 @media only screen and (max-width: 900px) {

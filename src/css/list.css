@@ -1,0 +1,162 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Roboto';
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+#mid-section {
+   padding: 2rem;
+   min-height: 100vh;
+   box-shadow: 0px 20px 10px #9d9d9d;
+
+}
+
+.result-heading {
+   padding-left: 40px;
+}
+
+.result-heading span {
+   font-family: 'Titillium Web', sans-serif;
+   font-size: 25px;
+}
+
+.restaurants {
+   width: 90%;
+   height: 170px;
+   margin: auto;
+   clear: both;
+   margin-top: 20px;
+}
+
+.rest-img {
+   width: 240px;
+   height: 150px;
+   background-color: #9b9b9b;
+   border-radius: 10px;
+   float: left;
+}
+
+.rest-info {
+   margin-left: 40px;
+   float: left;
+   font-family: 'Titillium Web', sans-serif;  
+}
+
+.rest-name {
+   font-size: 22px;
+}
+
+.ratings span:nth-child(1) {
+   font-size: 28px;
+   padding-right: 5px;
+   color: #9b9b9b;
+}
+
+.ratings span:nth-child(2) {
+   font-size: 18px;
+}
+
+.ratings span:nth-child(3) {
+   font-size: 13px;
+   padding-left: 2px;
+   padding-right: 10px;
+}
+
+.ratings span:nth-child(4) {
+   font-size: 20px;
+   color: #9b9b9b;
+   padding-right: 10px;
+}
+
+.ratings span:nth-child(5) {
+   font-size: 19px;
+}
+
+hr {
+   width: 90%;
+   margin: auto;
+}
+
+.page-selector{
+   width:100%;
+   height:150px;
+}
+
+.page-number{
+   padding-top:20px;
+   width:30%;
+   margin:auto;
+}
+
+.page-number span{
+   border:2px solid #9b9b9b;
+   border-radius:50%;
+   margin-left:20px;
+   width:50px;
+   height:50px;
+   font-size:28px;
+   text-align: center;
+   display: inline-block;
+   font-family: 'Titillium Web', sans-serif;   
+}
+
+.page-number span:hover{
+	background-color:#d8d8d8;
+}
+
+
+.navbar {
+   height: 20vh;
+   box-shadow: 0 4px 6px -6px #999;
+}
+
+.branding {
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+   align-items: center;
+   padding-left: 2em;
+}
+
+.logo {
+   width: 20vh;
+}
+
+
+.logo-title {
+   font-size: 2.2em;
+   color: #660c0c;
+   font-weight: bolder;
+   letter-spacing: 2.5px;
+   ;
+}
+
+.links {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+   padding-right: 2em;
+}
+
+.nav-button {
+   width: 6.5em;
+   height: 2.5em;
+   font-weight: bolder;
+   font-size: 1em;
+   border: none;
+}
+
+.login {
+   background: none;
+}
+
+.sign {
+   background: black;
+   color: white;
+}

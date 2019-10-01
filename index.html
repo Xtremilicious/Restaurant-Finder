@@ -1,10 +1,8 @@
 <html>
 
 <head>
-    <tile>
-
-    </tile>
-    <link rel="stylesheet" href="style.css">
+    <title>Foodcubo</title>
+    <link rel="stylesheet" href="./src/css/style.css">
 
 </head>
 
@@ -30,13 +28,33 @@
                 <div class="sub-title">Order food from favourite restaurants near you.</div>
             </div>
             <div class="search">
-                <input class="search-bar" type="text" placeholder="Enter your delivery location">
-                <button class="search-bar search-submit" type="submit">FIND FOOD</button>
-
+                <select id="selection" onchange="updateSelection(); document.getElementById('search').href=`./static/list.html?q=${this.value}`;" class="search-bar" type="text" placeholder="Enter your delivery location">
+                    <option value="" selected style="display: none">Enter your delivery location</option>    
+                    <option value="11">Ahmedabad</option>   
+                    <option value="3">Bangalore</option>   
+                    <option value="7">Chennai</option> 
+                    <option value="1">Delhi</option> 
+                    <option value="6">Hyderabad</option> 
+                    <option value="2">Kolkata</option>
+                    <option value="3">Mumbai</option> 
+                    <option value="5">Pune</option>  
+                </select>
+                <a id="search" href="#"><button disabled id="search-button" class="search-bar search-submit" type="submit">Search</button></a>
+                <script>
+                    function updateSelection(){
+                        console.log("lol");
+                    if(document.getElementById('selection').value==""){
+                        document.getElementById('search-button').disabled = true;
+                    }
+                    else{
+                        document.getElementById('search-button').disabled = false;
+                    }
+                }
+                </script>
             </div>
             <div class=" cities ">
-                <div class="cities-title">POPULAR CITIES IN INDIA</div>
-                <div class="cities-sub-title">Ahmedabad, Bangalore, Chennai, Delhi, Gurgaon, Hyderabad, Kolkata, Mumbai, Pune & more.</div>
+                <div class="cities-title">CITIES SERVED IN INDIA</div>
+                <div class="cities-sub-title">Ahmedabad, Bangalore, Chennai, Delhi, Hyderabad, Kolkata, Mumbai, & Pune</div>
             </div>
         </div>
         <div class="landing-images ">
@@ -71,12 +89,6 @@
         </div>
     </div>
     <div class="footer">
-        <div class='links'>
-<a href='./about-us.html' target='_blank'>About Us</a>
-<a href='./terms-and-conditions.html' target='_blank'>Terms</a>
-<a href='./privacy-policy.html' target='_blank'>Privacy Policy</a>
-<a href='./contact.html' target='_blank'>Contact</a>
-        </div>
         <div class='credits'>Made by Nilarjun Das | Inspired by Swiggy</div>
     </div>
 
