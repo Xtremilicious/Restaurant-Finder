@@ -1,20 +1,18 @@
 <html>
-
-<head>
+  <head>
     <title>Foodcubo</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="landing">
-        <div class="landing-interact">
-            <div class="navbar">
-                <div class="branding">
-                    <div><img class="logo" src="./src/images/logo.png"></div>
-                    <div class="logo-title">FOODCUBO</div>
-                </div>
-                <!--
+      <div class="landing-interact">
+        <div class="navbar">
+          <div class="branding">
+            <div><img class="logo" src="./src/images/logo.png" /></div>
+            <div class="logo-title">FOODCUBO</div>
+          </div>
+          <!--
                 <div class="links">
                     <div>
                         <button class="nav-button login">Login</button>
@@ -24,84 +22,123 @@
                     </div>
                 </div>
                 -->
-            </div>
-            <div class="title">
-                <div id="typewriter" class="changing"></div>
-                <div class="sub-title">Find awesome restaurants near you.</div>
-            </div>
-            <div class="search">
-                <select id="selection" onchange="updateSelection(); document.getElementById('search').href=`./static/list.html?q=${this.value}`;" class="search-bar" type="text" placeholder="Enter your delivery location">
-                    <option value="" selected style="display: none">Select your location</option>    
-                    <option value="11">Ahmedabad</option>   
-                    <option value="3">Bangalore</option>   
-                    <option value="7">Chennai</option> 
-                    <option value="1">Delhi</option> 
-                    <option value="6">Hyderabad</option> 
-                    <option value="2">Kolkata</option>
-                    <option value="3">Mumbai</option> 
-                    <option value="5">Pune</option>  
-                </select>
-                <a id="search" href="#"><button disabled id="search-button" class="search-bar search-submit" type="submit">Search</button></a>
-                <script>
-                    function updateSelection(){
-                        console.log("lol");
-                    if(document.getElementById('selection').value==""){
-                        document.getElementById('search-button').disabled = true;
-                    }
-                    else{
-                        document.getElementById('search-button').disabled = false;
-                    }
-                }
-                </script>
-            </div>
-            <div class=" cities ">
-                <div class="cities-title">CITIES SERVED IN INDIA</div>
-                <div class="cities-sub-title">Ahmedabad, Bangalore, Chennai, Delhi, Hyderabad, Kolkata, Mumbai, & Pune</div>
-            </div>
         </div>
-        <div class="landing-images ">
-
-            <img class="landing-image " src="./src/images/4.jpg ">
-
+        <div class="title">
+          <div id="typewriter" class="changing"></div>
+          <div class="sub-title">Find awesome restaurants near you.</div>
         </div>
+        <div class="search">
+          <select
+            id="selection"
+            onchange="updateSelection(); document.getElementById('search').href=`./static/list.html?q=${this.value}`;"
+            class="search-bar"
+            type="text"
+            placeholder="Enter your delivery location"
+          >
+            <option value="" selected style="display: none"
+              >Select your location</option
+            >
+            <option value="11">Ahmedabad</option>
+            <option value="3">Bangalore</option>
+            <option value="7">Chennai</option>
+            <option value="1">Delhi</option>
+            <option value="6">Hyderabad</option>
+            <option value="2">Kolkata</option>
+            <option value="3">Mumbai</option>
+            <option value="5">Pune</option>
+          </select>
+          <a id="search" href="#"
+            ><button
+              disabled
+              id="search-button"
+              class="search-bar search-submit"
+              type="submit"
+            >
+              Search
+            </button></a
+          >
+          <script>
+            function updateSelection() {
+              console.log("lol");
+              if (document.getElementById("selection").value == "") {
+                document.getElementById("search-button").disabled = true;
+              } else {
+                document.getElementById("search-button").disabled = false;
+              }
+            }
+          </script>
+        </div>
+        <div class=" cities ">
+          <div class="cities-title">CITIES SERVED IN INDIA</div>
+          <div class="cities-sub-title">
+            Ahmedabad, Bangalore, Chennai, Delhi, Hyderabad, Kolkata, Mumbai, &
+            Pune
+          </div>
+        </div>
+      </div>
+      <div class="landing-images ">
+        <img class="landing-image " src="./src/images/4.jpg " />
+      </div>
     </div>
     <div class="features">
-        <div class=feature>
-            <div><img class="feature-image" src="src/images/order.png"></div>
-            <div class="feature-title">No Minimum Order</div>
-            <div class="feature-desc">Order in for yourself or for the group, with no restrictions on order value</div>
+      <div class="feature">
+        <div><img class="feature-image" src="src/images/order.png" /></div>
+        <div class="feature-title">Variety & Choices</div>
+        <div class="feature-desc">
+          Loathing for Italian, Thai, Indian or Chinese food? We got restaurants
+          covering many cuisines.
         </div>
-        <div class=feature>
-            <div><img class="feature-image" src="src/images/ice-cream.png"></div>
-            <div class="feature-title">Live Order Tracking</div>
-            <div class="feature-desc">Know where your order is at all times, from the restaurant to your doorstep</div>
+      </div>
+      <div class="feature">
+        <div><img class="feature-image" src="src/images/ice-cream.png" /></div>
+        <div class="feature-title">Close To You</div>
+        <div class="feature-desc">
+          Get to know awesome resturants near you. Find out what they offer and
+          see customer reviews.
         </div>
-        <div class=feature>
-            <div><img class="feature-image" src="src/images/food-delivery.png"></div>
-            <div class="feature-title">Lightning-Fast Delivery</div>
-            <div class="feature-desc">Experience Foodcubo's superfast delivery for food delivered fresh & on time</div>
-        </div>
+      </div>
     </div>
-    <div class='mobile'>
-        <div class="mob-1"><img class="mobile-image" src="src/images/phone.png"></div>
-        <div class="mob-2">
-            <div class="changing">Restaurants in your pocket</div>
-            <div class="sub-title">Order from your favorite restaurants & track on the go, with the all-new Foodcubo app.</div>
-            <div class="stores"><img class="store-image" src="src/images/play.webp"><img class="store-image" src="src/images/iOS.webp"></div>
+    <div class="mobile">
+      <div class="mob-1">
+        <img class="mobile-image" src="src/images/phone.png" />
+      </div>
+      <div class="mob-2">
+        <div class="changing">Restaurants in your pocket</div>
+        <div class="sub-title">
+          Discover new restaurants near you on the go, with the all-new Foodcubo
+          app.
         </div>
+        <div class="stores">
+          <img
+            class="store-image"
+            onClick="alertFunction()"
+            src="src/images/play.webp"
+          /><img class="store-image" src="src/images/iOS.webp" onClick="alertFunction()"/>
+        </div>
+      </div>
     </div>
     <div class="footer">
-        <div class='credits'>Made by Nilarjun Das | Inspired by Swiggy</div>
+      <div class="credits">Made by Nilarjun Das | Inspired by Swiggy</div>
     </div>
 
-    <script src='./src/js/core.js'></script>
-    <script type="text/javascript">
-        const instance = new Typewriter('#typewriter', {
-            strings: ['Feeling hungry?', 'Unexpected guests?', 'Cooking gone wrong?', 'Game night?', 'Movie marathon?'],
-            autoStart: true,
-            loop: true,
-        });
+    <script>
+      const alertFunction = () => {
+        window.alert("App is in development... or is it?");
+      };
     </script>
-</body>
-
+    <script src="./src/js/core.js"></script>
+    <script type="text/javascript">
+      const instance = new Typewriter("#typewriter", {
+        strings: [
+          "Feeling hungry?",
+          "Unexpected guests?",
+          "Cooking gone wrong?",
+          "Game night?",
+          "Movie marathon?"
+        ],
+        autoStart: true,
+        loop: true
+      });
+    </script>
+  </body>
 </html>

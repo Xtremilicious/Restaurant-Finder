@@ -126,8 +126,10 @@ body {
     height: 55vh;
     background-color: #3B0B0B;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     color: white;
+    padding-left: 15%;
+    padding-right: 15%
 }
 
 .feature {
@@ -184,6 +186,7 @@ body {
 .store-image {
     width: 40%;
     margin: 1em;
+    cursor: pointer;
 }
 
 .stores {
